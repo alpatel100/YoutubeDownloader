@@ -70,7 +70,12 @@ def get_video_info(url):
 
 def process_video_task(url, start, end):
     temp_dir = tempfile.gettempdir()
-    ydl_opts = {'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36','format': 'bestvideo+bestaudio/best', 'outtmpl': f'{temp_dir}/%(id)s.%(ext)s', 'merge_output_format': 'mp4', 'quiet': True}
+    ydl_opts = {'user_agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+                'cookiefile':'www.youtube.com_cookies.txt'
+                'format': 'bestvideo+bestaudio/best', 
+                'outtmpl': f'{temp_dir}/%(id)s.%(ext)s', 
+                'merge_output_format': 'mp4', 
+                'quiet': True}
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         info = ydl.extract_info(url, download=True)
         in_path = ydl.prepare_filename(info)

@@ -1,0 +1,31 @@
+# =============================================================
+#  YouTube Clip Downloader - Config File
+#  Edit and save, then double-click run_download.bat
+# =============================================================
+#
+#  RULES:
+#    URL            - required
+#    OUTPUT_DIR     - required (must be an existing folder path)
+#    QUALITY        - optional; default is 1080p
+#                     options: 720p | 1080p | 1440p | 2160p | best
+#    START/END      - optional; leave blank to download the full video (hh:mm:ss)
+#    FILENAME       - optional; leave blank to use the video title
+#    UPLOAD         - optional; yes = upload to YouTube as Private after download
+#    YT_TITLE       - optional; YouTube video title (defaults to filename)
+#    YT_DESCRIPTION - optional; YouTube video description
+#    YT_PLAYLIST    - optional; playlist name to add the video to (creates if not found)
+#
+#  To add more videos, separate each job with a line containing: ---
+#
+# =============================================================
+
+URL=https://www.youtube.com/watch?v=BqujfN0T14A
+QUALITY=best
+START=00:30:03
+END=01:23:47
+OUTPUT_DIR=S:\VIdeos\HaBuild
+FILENAME=
+UPLOAD=yes
+YT_TITLE=
+YT_DESCRIPTION=
+YT_PLAYLIST=Yoga

@@ -1,0 +1,37 @@
+# -------------------------------------------------------
+# SECURITY - Never commit these files to version control
+# -------------------------------------------------------
+
+# YouTube session cookies (grants full account access)
+cookies.txt
+MacVersion/cookies.txt
+
+# Google OAuth credentials (grants API access to your account)
+client_secrets.json
+token.pickle
+
+# -------------------------------------------------------
+# Common junk files
+# -------------------------------------------------------
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Mac
+.DS_Store
+.AppleDouble
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Downloaded video files (usually too large for git)
+*.mp4
+*.mkv
+*.webm
+
+# Temporary files
+*.tmp
+*.log

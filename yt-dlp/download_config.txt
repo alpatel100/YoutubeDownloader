@@ -10,6 +10,8 @@
 #                     options: 720p | 1080p | 1440p | 2160p | best
 #    START/END      - optional; leave blank to download the full video (hh:mm:ss)
 #    FILENAME       - optional; leave blank to use the video title
+#    AUDIO_ONLY     - optional; yes = download audio only as .m4a (default: no)
+#    AUDIO_QUALITY  - optional; audio bitrate when AUDIO_ONLY=yes: 128k | 192k | 320k | best (default: best)
 #    UPLOAD         - optional; yes = upload to YouTube as Private after download
 #    YT_TITLE       - optional; YouTube video title (defaults to filename)
 #    YT_DESCRIPTION - optional; YouTube video description
@@ -19,13 +21,41 @@
 #
 # =============================================================
 
-URL=https://www.youtube.com/watch?v=BqujfN0T14A
+URL=https://www.youtube.com/watch?v=q-ePnmmwGfg
 QUALITY=best
-START=00:30:03
-END=01:23:47
+START=00:22:57
+END=01:17:25
 OUTPUT_DIR=S:\VIdeos\HaBuild
 FILENAME=
 UPLOAD=yes
 YT_TITLE=
 YT_DESCRIPTION=
 YT_PLAYLIST=Yoga
+
+---
+
+URL=https://www.youtube.com/watch?v=gV5ot9PWP3s
+QUALITY=best
+START=00:26:18
+END=01:17:56
+OUTPUT_DIR=S:\VIdeos\HaBuild
+FILENAME=
+UPLOAD=yes
+YT_TITLE=
+YT_DESCRIPTION=
+YT_PLAYLIST=Yoga
+
+---
+
+URL=https://www.youtube.com/watch?v=1vxiZn_W7Xw
+QUALITY=best
+START=00:30:39
+END=01:25:33
+OUTPUT_DIR=S:\VIdeos\HaBuild
+FILENAME=
+UPLOAD=yes
+YT_TITLE=
+YT_DESCRIPTION=
+YT_PLAYLIST=Yoga
+
+
